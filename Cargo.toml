@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "crates/cs-protocol",
+    "crates/cs-server",
+]
+resolver = "2"
+
+[workspace.dependencies]
+tokio = { version = "1.21.2", features = ["full"] }          # для асинхронной работы (сети, таймеры).
+serde = { version = "1.0", features = ["derive"] }           # для превращения наших Rust-структур в JSON и обратно.
+serde_json = "1.0"                                           # для превращения наших Rust-структур в JSON и обратно.
+tracing = "0.1"                                              # для красивого и полезного логирования.
