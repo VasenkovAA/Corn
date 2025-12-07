@@ -11,3 +11,11 @@ repos:
     -   id: fmt
     -   id: clippy
     -   id: cargo-check
+
+-   repo: local
+    hooks:
+      - id: generate_tree
+        name: generate tree
+        entry: >
+          bash -c "tree-generator -o ./docs/auto/project_structure.txt"
+        language: system

@@ -1,0 +1,2 @@
+pre-commit
+codingutils @ git+https://github.com/VasenkovAA/CodingUtils.git@92fe05bc1b1f8cdee4456fb659f8d28b55b29868
