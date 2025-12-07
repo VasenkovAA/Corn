@@ -23,3 +23,12 @@ target
 #RUST
 /target
 Cargo.lock
+
+
+#Python
+/venv
+venv
+
+#Project
+docs/auto
+docs/auto/
