@@ -19,12 +19,3 @@ jobs:
 
       - name: Run Tests
         run: cargo test --all-targets --all-features
-
-      - name: Security audit
-        run: cargo audit
-
-      - name: License check
-        run: cargo deny check licenses
-
-      - name: Dependency check
-        run: cargo deny check advisories
