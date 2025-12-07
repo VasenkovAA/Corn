@@ -23,11 +23,12 @@ target
 #RUST
 /target
 Cargo.lock
-
+target/
 
 #Python
 /venv
 venv
+venv/
 
 #Project
 docs/auto
