@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: docker.io/postgres:15-alpine
+    container_name: corn-postgres
+    environment:
+      POSTGRES_USER: corn_user
+      POSTGRES_PASSWORD: corn_password
+      POSTGRES_DB: corn_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "8102:5432"
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

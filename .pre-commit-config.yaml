@@ -18,3 +18,11 @@ repos:
         entry: >
           bash -c "tree-generator -o ./docs/auto/project_structure.txt"
         language: system
+
+      - id: file_merger
+        name: merge files
+        entry: >
+          bash -c "file-merger -d ./crates/cs-protocol -r -o ./docs/auto/all_cs-protocol.txt &&
+          file-merger -d ./crates/cs-server -r -o ./docs/auto/all_cs-server.txt &&
+          file-merger -d ./ -r -p "Cargo.toml" -o ./docs/auto/all_Cargo-toml.txt"
+        language: system
